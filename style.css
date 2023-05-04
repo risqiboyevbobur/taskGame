@@ -50,6 +50,10 @@ body {
   font-size: 14px;
   animation: 0.6s ease-in-out turn-text-animation;
 }
+button:hover{
+  cursor: pointer;
+  opacity: 90%;
+}
 .turn i {
   font-size: 1.8rem;
   margin-left: 10px;
@@ -124,11 +128,33 @@ body {
   cursor: pointer;
 }
 .square {
-  background-color: red;
+background-color: var(--gray);
+border-radius:10px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 3rem;
+}
+.square:hover{
+  cursor: pointer;
+  opacity: 70%;
 }
 
 .score {
-  background-color: green;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 60px;
+border-radius: 10px;
+}
+.score p{
+  font-size: 14px;
+  font-weight: 600;
+}
+.score span{
+  font-size: 12px;
+  margin-top: 2px;
 }
 .actions {
   background-color: purple;
@@ -143,4 +169,34 @@ footer p {
 }
 footer a {
   color: var(--yellow);
+}
+.modal{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.6);
+}
+.modal-contents{
+  transform: translateY(-80px);
+  height: 150px;
+  width: 100%;
+  max-width: 300px;
+  background-color: #2a4544;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  margin: 10px;
+}
+.modal-contents button{
+  padding: 10px;
+  background-color: var(--turquoise);
+  color: #2a4544;
+  border-radius: 3px;
 }

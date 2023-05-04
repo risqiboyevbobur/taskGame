@@ -27,26 +27,37 @@
             Actions
             <i class="fa-solid fa-chevron-down"></i>
           </button>
-          <div class="items border hidden" >
+          <div class="items border hidden">
             <button>Reset</button>
             <button>New Round</button>
           </div>
         </div>
         <!-- Gameboard -->
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
         <!-- Scoreboard -->
-        <div class="score"></div>
-        <div class="score"></div>
-        <div class="score"></div>
+        <div>
+        <div class="score shadow" style="background-color: var(--turquoise);">
+          <p>Player 1 </p>
+          <span data-id="player1-status"> 0 win</span>
+        </div>
       </div>
+      <div class="score shadow" style="background-color: var(--light-gray);">
+        <p>Ties</p>
+        <span data-id="ties">0 win</span>
+      </div>
+      <div class="score shadow" style="background-color: var(--yellow);">
+        <p>Player 2 </p>
+        <span data-id="player2-status"> 0 win</span>
+      </div>
+    </div>
     </main>
     <footer>
       <p>
@@ -59,5 +70,12 @@
         <a href="https://github.com/risqiboyevbobur/Crud-in-httml">@dev</a>
       </p>
     </footer>
+    <div class="modal hidden ">
+      <div class="modal-contents">
+        <p>Player 1 won!</p>
+        <button>Play again!</button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
   </body>
 </html>
